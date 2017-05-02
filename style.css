@@ -1,0 +1,101 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav {
+  background-color: cadetblue;
+  color: #fff;
+}
+
+/*
+  parent child {
+      code/rule here
+}
+
+*/
+.nav ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  font-size: 0px;
+}
+/*
+  parent child child{
+      code/rule here
+}
+*/
+.nav ul li {
+  padding: 16px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #000;
+  transition: background-color 1.5s;
+}
+
+.nav ul li:hover {
+  background-color: #000;
+}
+
+.image-area {
+  background-image: url('images/background.png');
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000;
+}
+
+.cent-container{
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0px 16px;
+}
+
+.image-text {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 2.5rem;/*relative to font-ize of the root element*/
+
+
+}
+
+.intro-txt {
+  text-align: center;
+  color: gray;
+  font-size: 1.5rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.single-service {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+  .single-service p {
+    padding: 0px 16px;
+  }
+
+  @media screen and (min-width:700px) {/*when the screen goes below 700px follow these rules*/
+      .nav ul{
+        text-align: right;
+      }
+
+      .nav li {
+        display: inline-block;
+        border-bottom: 0!important;/*important overrides a rule*/
+        border-left: 1px solid #000;
+        text-align: left;
+      }
+
+      .single-service {
+          width: 50%;
+          float: left;
+      }
+  }
